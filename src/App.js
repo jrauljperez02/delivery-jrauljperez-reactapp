@@ -18,14 +18,17 @@ function App() {
     setCartIsShown(false);
   }
 
+
+  
   return (
     <CardProvider>
       {cartIsShown && <Cart onClose = {hideCartHandler}/> }
       <Header onShowCart = {showCartHandler}/>
+      
       <main>
         <Meals/>
       </main>
-      
+    
     </CardProvider>
   );
 }
